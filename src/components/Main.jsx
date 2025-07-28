@@ -50,8 +50,7 @@ export default function Main() {
               <IngredientsList ingredients={ingredients} />
               <div className="get-recipe-container">
                 <div>
-                  <h3>Ready to Cook?</h3>
-                  <p>Click below to get your recipe suggestion</p>
+                  <h3>Go Cook Your Meal !!</h3>
                 </div>
                 <button onClick={getRecipe}>Get Recipe</button>
               </div>
@@ -71,7 +70,7 @@ export default function Main() {
             borderRadius: '6px',
             cursor: 'pointer'
           }}>
-            Start Over
+            Get a new recipe
           </button>
         </div>
       )}
