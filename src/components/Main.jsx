@@ -16,8 +16,8 @@ export default function Main() {
   };
 
   const getRecipe = () => {
-    if (ingredients.length < 4) {
-      alert('Please add at least 4 ingredients!');
+    if (ingredients.length < 3) {
+      alert('Please add at least 3 ingredients!');
       return;
     }
 
