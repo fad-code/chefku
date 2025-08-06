@@ -10,7 +10,7 @@ export default function Recipe({ recipe }) {
     setDisplayedLines([]);
     setIsTyping(true);
 
-    // ✅ Remove duplicates
+    
     const uniqueIngredients = [...new Set(recipe.ingredients)];
     const uniqueSteps = [...new Set(recipe.steps)];
 
@@ -33,7 +33,7 @@ export default function Recipe({ recipe }) {
       if (index < lines.length) {
         setDisplayedLines((prev) => [...prev, lines[index]]);
         index++;
-        setTimeout(addLine, 300); // Typing speed per line
+        setTimeout(addLine, 300); 
       } else {
         setIsTyping(false);
       }
