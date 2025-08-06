@@ -10,6 +10,10 @@ export default function Recipe({ recipe }) {
     clearTimeout(timeoutRef.current);
     setDisplayedLines([]);
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> d72b908f6212fee51ec421a40ebcdb27a0d2d01c
     const uniqueIngredients = [...new Set(recipe.ingredients)];
     const uniqueSteps = [...new Set(recipe.steps)];
 
@@ -23,6 +27,7 @@ export default function Recipe({ recipe }) {
       lines.push('Try different ingredients!');
     }
 
+<<<<<<< HEAD
     let lineIndex = 0;
     let charIndex = 0;
     let currentLine = '';
@@ -41,6 +46,16 @@ export default function Recipe({ recipe }) {
           setDisplayedLines((prev) => [...prev, '']);
           timeoutRef.current = setTimeout(typeLine, 150); 
         }
+=======
+    let index = 0;
+    const addLine = () => {
+      if (index < lines.length) {
+        setDisplayedLines((prev) => [...prev, lines[index]]);
+        index++;
+        setTimeout(addLine, 300); 
+      } else {
+        setIsTyping(false);
+>>>>>>> d72b908f6212fee51ec421a40ebcdb27a0d2d01c
       }
     };
 
